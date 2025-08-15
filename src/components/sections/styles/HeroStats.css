@@ -1,0 +1,49 @@
+/* HERO STATS COMPONENT STYLES */
+.hero-stats-section {
+  background: var(--bg-secondary);
+  padding: 4rem 1rem;
+}
+
+.hero-stats-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-stat {
+  text-align: center;
+}
+
+.hero-stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.hero-stat-label {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-stats-section {
+    padding: 3rem 1rem;
+  }
+  
+  .hero-stats {
+    gap: 1.5rem;
+  }
+  
+  .hero-stat-value {
+    font-size: 1.75rem;
+  }
+}

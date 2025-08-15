@@ -7,51 +7,51 @@ import './styles/Header.css';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [toggle, setToggle] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+    setToggle(!toggle);
   };
 
   const closeMenu = () => {
     setIsMenuOpen(false);
+    setToggle(false);
   };
 
   return (
     <header className="header-section">
       <nav className="header-nav">
-        <div className="header-logo">
-          <div className="header-logo-icon">
-            <MaterialIcon name="flash_on" className="header-icon" />
+        <div className="header-left">
+          <div className='toggle' onClick={toggleMenu}>
+            <button className={`toggle__botton ${toggle ? 'activo' : ''}`}>
+              <span className="l1 span"></span>
+              <span className="l2 span"></span>
+              <span className="l3 span"></span>
+            </button>
           </div>
-          <span className="header-logo-text">DevAgency</span>
-        </div>
-        
-        <div className="header-nav-links">
-          <a href="#features" className="header-nav-link">Características</a>
-          <a href="#services" className="header-nav-link">Servicios</a>
-          <a href="#pricing" className="header-nav-link">Precios</a>
-          <a href="#portfolio" className="header-nav-link">Portafolio</a>
-          <a href="#testimonials" className="header-nav-link">Testimonios</a>
-        </div>
-
-                <div className="header-nav-actions">
           <ThemeToggle />
         </div>
-
-        {/* Mobile Menu Button */}
-        <button 
-          className="header-mobile-menu-btn"
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
-          <MaterialIcon 
-            name={isMenuOpen ? "close" : "menu"} 
-            className="header-mobile-menu-icon" 
-          />
-        </button>
+        
+        <div className="header-center">
+          <div className="header-logo">
+            <div className="header-logo-icon">
+              <MaterialIcon name="flash_on" className="header-icon" />
+            </div>
+          </div>
+        </div>
+        
+        <div className="header-right">
+          <div className="header-nav-links">
+            <a href="#features" className="header-nav-link">Características</a>
+            <a href="#services" className="header-nav-link">Servicios</a>
+            <a href="#pricing" className="header-nav-link">Precios</a>
+            <a href="#portfolio" className="header-nav-link">Portafolio</a>
+            <a href="#testimonials" className="header-nav-link">Testimonios</a>
+          </div>
+        </div>
       </nav>
 
-      {/* Mobile Menu Overlay */}
       {isMenuOpen && (
         <div className="header-mobile-overlay" onClick={closeMenu}>
           <div className="header-mobile-menu" onClick={(e) => e.stopPropagation()}>
@@ -60,7 +60,6 @@ export function Header() {
                 <div className="header-logo-icon">
                   <MaterialIcon name="flash_on" className="header-icon" />
                 </div>
-                <span className="header-logo-text">DevAgency</span>
               </div>
               <button 
                 className="header-mobile-close-btn"

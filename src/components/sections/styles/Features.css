@@ -48,10 +48,10 @@
   transition: all 0.3s ease;
 }
 
-.features-card:hover {
+/* .features-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 30px var(--shadow);
-}
+} */
 
 .features-card-icon {
   display: flex;

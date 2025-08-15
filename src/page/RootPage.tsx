@@ -3,6 +3,7 @@
 import React from 'react'
 import { Header } from '@/components/sections/Header'
 import { Hero } from '@/components/sections/Hero'
+import { HeroStats } from '@/components/sections/HeroStats'
 import { Features } from '@/components/sections/Features'
 import { Services } from '@/components/sections/Services'
 import { Pricing } from '@/components/sections/Pricing'
@@ -17,6 +18,7 @@ const RootPage = () => {
     <div>
         <Header />
         <Hero />
+        <HeroStats />
         <Features />
         <Services />
         <Pricing />
