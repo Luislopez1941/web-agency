@@ -1,0 +1,238 @@
+/* PRICING COMPONENT STYLES */
+.pricing-section {
+  padding: 10px;
+  background: var(--bg-primary);
+}
+
+.pricing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.pricing-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.pricing-subtitle {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.pricing-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px var(--shadow);
+}
+
+.pricing-card-featured {
+  border: 2px solid var(--accent-color);
+  transform: scale(1.05);
+}
+
+.pricing-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.pricing-card-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pricing-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.pricing-card-description {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.pricing-card-price {
+  margin-bottom: 1rem;
+}
+
+.pricing-price-amount {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.pricing-price-duration {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.pricing-delivery {
+  background: var(--bg-secondary);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.pricing-delivery-text {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.pricing-card-features {
+  margin-bottom: 2rem;
+}
+
+.pricing-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.pricing-feature-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--accent-color);
+  margin-top: 0.125rem;
+  flex-shrink: 0;
+}
+
+.pricing-feature-text {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.pricing-card-footer {
+  text-align: center;
+}
+
+.pricing-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.pricing-btn-primary {
+  background: var(--gradient-primary);
+  color: white;
+}
+
+.pricing-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+}
+
+.pricing-btn-outline {
+  background: transparent;
+  color: var(--text-primary);
+  border: 2px solid var(--border-color);
+}
+
+.pricing-btn-outline:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.pricing-note {
+  text-align: center;
+  padding: 2rem;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+}
+
+.pricing-note-text {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pricing-title {
+    font-size: 2rem;
+  }
+  
+  .pricing-card-featured {
+    transform: none;
+  }
+}
+
+/* Swiper Carousel Styles */
+.pricing-swiper {
+  padding: 1rem 0;
+}
+
+.pricing-swiper .swiper-slide {
+  height: auto;
+}
+
+.pricing-swiper .swiper-pagination {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.pricing-swiper .swiper-pagination-bullet {
+  background: var(--accent-color);
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+
+.pricing-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* Responsive adjustments for carousel */
+@media (max-width: 768px) {
+  .pricing-swiper {
+    padding: 0.5rem 0;
+  }
+  
+  .pricing-swiper .swiper-slide {
+    padding: 0 0.5rem;
+  }
+} 

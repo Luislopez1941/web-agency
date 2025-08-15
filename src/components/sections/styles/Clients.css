@@ -1,0 +1,215 @@
+/* CLIENTS COMPONENT STYLES */
+.clients-section {
+  padding: 10px;
+  background: var(--bg-secondary);
+}
+
+.clients-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.clients-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.clients-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.clients-subtitle {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.clients-industries {
+  margin-bottom: 4rem;
+}
+
+.clients-industries-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.clients-industries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.clients-industry-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+
+.clients-industry-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px var(--shadow);
+}
+
+.clients-industry-icon {
+  font-size: 2rem;
+}
+
+.clients-industry-name {
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.clients-industry-count {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.clients-logos {
+  margin-bottom: 4rem;
+}
+
+.clients-logos-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.clients-logos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.clients-logo-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.clients-logo-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px var(--shadow);
+}
+
+.clients-logo-placeholder {
+  height: 60px;
+  background: var(--bg-secondary);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.clients-logo-text {
+  color: var(--text-secondary);
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.clients-logo-industry {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+.clients-cta {
+  text-align: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 3rem 2rem;
+}
+
+.clients-cta-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.clients-cta-text {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.clients-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--gradient-primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.clients-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+}
+
+/* Swiper Carousel Styles */
+.clients-industries-swiper,
+.clients-logos-swiper {
+  padding: 1rem 0;
+}
+
+.clients-industries-swiper .swiper-slide,
+.clients-logos-swiper .swiper-slide {
+  height: auto;
+}
+
+.clients-industries-swiper .swiper-pagination,
+.clients-logos-swiper .swiper-pagination {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.clients-industries-swiper .swiper-pagination-bullet,
+.clients-logos-swiper .swiper-pagination-bullet {
+  background: var(--accent-color);
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+
+.clients-industries-swiper .swiper-pagination-bullet-active,
+.clients-logos-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .clients-title {
+    font-size: 2rem;
+  }
+  
+  .clients-industries-swiper,
+  .clients-logos-swiper {
+    padding: 0.5rem 0;
+  }
+  
+  .clients-industries-swiper .swiper-slide,
+  .clients-logos-swiper .swiper-slide {
+    padding: 0 0.5rem;
+  }
+} 
